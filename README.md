@@ -1,10 +1,10 @@
-# web_api_base
+# Web Api Base
 
-- web_api_base is a Node js project template that could be used as a base to get you up and running with your project.
+- Web Api Base is a Node js project template that could be used as a base to get you up and running with your project.
 - It includes some services that are expected to be needed for any project.
 - The template follows an **MVC** approach to structure project files.
 
-## Services
+## Services ⚡
 
 - [Express web framework](https://www.npmjs.com/package/express)
 - [Mongoose object document mapper](https://www.npmjs.com/package/mongoose)
@@ -15,7 +15,7 @@
 - [Jwt authentication](https://www.npmjs.com/package/jsonwebtoken)
 - [Dotenv environment variables](https://www.npmjs.com/package/dotenv)
 
-## Get Started
+## Get Started 🚀
 
 - execute the command: `npm install`
 - Replace all occurance of the string 'web_api_base' with your project name

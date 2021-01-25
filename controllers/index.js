@@ -10,7 +10,7 @@ function homePage(req, res, next) {
   const response = {
     data: {
       message: "Welcome to web_api_base api",
-      version: "0.1.0",
+      version: "1.0.1",
     },
   };
   successHandler(res, response);

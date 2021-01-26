@@ -1,12 +1,12 @@
 {
-  "name": "Web-Api-node",
+  "name": "no-name-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev-start": "nodemon -r dotenv/config server.js dotenv_config_path=./config/.env",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

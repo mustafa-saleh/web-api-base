@@ -6,7 +6,8 @@
   "scripts": {
     "dev-start": "nodemon -r dotenv/config server.js dotenv_config_path=./config/.env",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\"",
+    "build": "webpack server.js -o public/bundle.js"
   },
   "author": "",
   "license": "ISC",

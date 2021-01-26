@@ -7,7 +7,6 @@
     "dev-start": "nodemon -r dotenv/config server.js dotenv_config_path=./config/.env",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\"",
-    "build": "webpack ../server.js -o public/bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +23,9 @@
     "morgan": "^1.10.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
   }
 }

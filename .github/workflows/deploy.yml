@@ -28,5 +28,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd ~/web-api-base
-            git clone https://github.com/mustafa-saleh/web-api-base.git
+            git pull
             docker-compose up

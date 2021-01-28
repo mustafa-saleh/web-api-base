@@ -1,0 +1,30 @@
+name: Node API CD workflow
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 12
+      - name: Installing dependancies
+        run: npm ci
+      - name: Run Tests
+        run: npm test
+    - name: SSH to AWS EC2 instance and deploy node app
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          cd ~/web-api-base
+          git clone https://github.com/mustafa-saleh/web-api-base.git
+          docker-compose up

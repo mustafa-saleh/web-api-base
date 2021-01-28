@@ -29,4 +29,4 @@ jobs:
           script: |
             cd ~/web-api-base
             git pull
-            docker-compose up
+            docker-compose up -d

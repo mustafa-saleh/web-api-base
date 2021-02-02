@@ -29,4 +29,6 @@ jobs:
           script: |
             cd ~/web-api-base
             git pull
+            docker-compose down
+            docker image rm web-api-base_app
             docker-compose up -d
